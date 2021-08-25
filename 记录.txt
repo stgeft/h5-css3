@@ -1,0 +1,4 @@
+一：子元素在父元素中居中的方法
+	用margin; 
+	设置弹性盒  水平（justify-content:center;) 垂直（align-items:center;)
+	用定位，top:0,bottom:0,left:0,right:0,margin:auto

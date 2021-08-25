@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1,.box2{
+            width: 100px;
+            height: 100px;
+        }
+        .box1{
+            background-color: aqua;
+        }
+        .box2{
+            background-color: pink;
+        }
+        .box3{
+            width: 200px;
+            height: 100px;
+            background-color: orange;
+            padding-top: 100px;
+        }
+        .box4{
+            width: 100px;
+            height: 100px;
+            background-color: plum;
+        }
+        /*
+             垂直外边距的重叠（折叠）
+                -相邻的垂直方向外边距会发生重叠现象
+                -兄弟元素
+                    -兄弟元素间的相邻垂直外边距会取两者之间的较大值（两者都是正值）
+                    -特殊情况
+                        一正一负时，则取两者的和
+                        都为负时，取负值较大者
+                    -对开发有利
+                -父子元素
+                    -父子元素间相邻外边距，子元素的会传递给父元素，即给子元素设margin是父子一起移动的
+                    -父子外边距的折叠会影响页面的布局
+                    -解决方法
+                        不用margin ，父元素用padding
+                        父元素用边框隔开使两外边距不相邻
+
+         */
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3">
+        <div class="box4"></div>
+    </div>
+</body>
+</html>

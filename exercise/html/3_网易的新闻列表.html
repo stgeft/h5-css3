@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网易新闻列表</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        ul{
+            list-style-type: none;
+        }
+        .news-wrapper{
+            width: 300px;
+            height: 358px;
+            margin: 50px auto;
+            background-color:white;
+            border-top: 1px solid #ddd;
+        }
+        .news-title{
+            display: inline-block;
+            height: 30px;
+            border-top: 1px solid red;
+            margin-top: -1px;
+            padding-top: 10px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .news-title a{
+            font-weight: bold;
+            color: #404040;
+        }
+        .news-img{
+            height: 150px;
+        }
+        .news-img h3{
+            margin-top: -30px;
+            color: white;
+            padding-left: 20px;
+            font-size: 16px;
+        }
+        ul{
+            margin-top: 12px;
+        }
+        ul li{
+            margin-top: 17px; 
+        }
+        ul li::before{
+            content: "■";
+            color: rgb(158, 149, 149);
+            font-size: 12px;
+            margin-right: 4px;
+        }
+        li a{
+            font-size: 14px;
+            color: #666;
+            font-family: 宋体;
+        }
+        .news-title a:hover{
+            color: red;
+        }
+        li a:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="news-wrapper">
+        <!-- 标题标签 -->
+        <div class="news-title">
+            <a href="javascript:;">军事</a>
+            <span>·</span>
+            <a href="javascript:;">航空</a>
+        </div>
+        <!-- 图片容器 -->
+        <div class="news-img">
+            <a href="javascript:;">
+                <img src="../img/3/网易新闻列表.webp" alt="">
+                <h3>德国未来空降战车的造型太科幻了</h3>
+            </a>
+        </div>
+        <!-- 新闻列表 -->
+        <ul class="news-list">
+            <li>
+                <a href="javascript:;">空降部队全新行头：直20+星空迷彩+新枪！</a>
+            </li>
+            <li>
+                <a href="javascript:;">美军十万吨级核动力航母出港甲板停满飞机</a>
+            </li>
+            <li>
+                <a href="javascript:;">民航局：日常管理松懈导致南京机场疫情</a>
+            </li>
+            <li>
+                <a href="javascript:;">国内旅客有望体验这款空客新飞机</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

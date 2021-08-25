@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 256px;
+            width: 256px;
+            background-image: url(../img/9/bg2.png);
+            animation: infinite test steps(6) 1s;
+            margin: 0 auto;
+        }
+        @keyframes test {
+            from{
+                background-position: 0 0;
+            }
+            to{
+                background-position: -1536px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

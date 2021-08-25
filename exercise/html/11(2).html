@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>嘿嘿嘿</title>
+    <style>
+        html{
+            perspective: 800px;
+        }
+        .cube{
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            margin-top: 100px;
+            transform-style: preserve-3d;
+            animation: 5s rotate linear infinite;
+        }
+        @keyframes rotate {
+            from{
+                transform: rotateX(0) rotateZ(0);
+            }
+            to{
+                transform: rotateX(360deg)  rotateZ(360deg);
+            }
+        }
+        .cube>div{
+            opacity: 0.85;
+            position: absolute;
+            
+        }
+        img{
+            vertical-align: top;
+        }
+        .box1{
+            transform: rotateY(90deg) translateZ(100px);
+        }
+        .box2{
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+        .box3{
+            transform: rotateX(90deg) translateZ(100px);
+        }
+        .box4{
+            transform: rotateX(-90deg) translateZ(100px);
+        }
+        .box5{
+            transform: rotateY(180deg) translateZ(100px);
+        }
+        .box6{
+            transform: translateZ(100px);
+        }
+    </style>
+</head>
+<body>
+    <div class="cube">
+        <div class="box1">
+            <img src="../img/11/微1.jpg" alt="">
+        </div>
+        <div class="box2">
+            <img src="../img/11/微2.jpg" alt="">
+        </div>
+        <div class="box3">
+            <img src="../img/11/微3.jpg" alt="">
+        </div>
+        <div class="box4">
+            <img src="../img/11/微4.jpg" alt="">
+        </div>
+        <div class="box5">
+            <img src="../img/11/微5.jpg" alt="">
+        </div>
+        <div class="box6">
+            <img src="../img/11/微6.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

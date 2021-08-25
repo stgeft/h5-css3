@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            绝对定位
+                -元素的position属性设置为absolute时开启绝对定位
+                -开启后的特点
+                    1、如果不设置偏移量则元素的位置不变
+                    2、元素会从文档流中脱离
+                    3、元素会提升一个层级
+                    4、是相对于包含块进行定位的
+                
+                包含块(containing block)
+                    -正常情况下
+                        包含块即为离当前元素最近的祖先块元素
+                    -绝对定位的包含块
+                        离当前元素最近的开启了定位的祖先元素
+                            若没有，则根元素就是它的块元素
+
+                    -html（根元素，初始包含块）
+
+                行内元素开启绝对定位后变为块元素
+         */
+         .box1{
+             width: 200px;
+             height: 200px;
+             background-color: #bfa;
+         }
+         .box2{
+             width: 800px;
+             height: 800px;
+             background-color: pink;
+         }
+         .box3{
+             width: 500px;
+             height: 500px;
+             background-color: orange;
+             position: relative;
+         }
+         .box4{
+             width: 200px;
+             height: 200px;
+             background-color: red;
+             position: absolute;
+         }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2">
+        <div class="box3">
+            <div class="box4"></div>
+        </div>
+    </div>
+</body>
+</html>

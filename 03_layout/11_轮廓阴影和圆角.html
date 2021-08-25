@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            /*
+                outline用来设置元素的轮廓线，用法与border相同
+                    轮廓和边框的区别：
+                        轮廓不影响页面的布局（就是不会使元素发生移动）
+             */
+            outline: red 10px solid;
+
+            /*
+                box-shadow 用来设置元素的阴影效果，阴影不影响页面的布局
+                    第一个值：水平偏移量 正值向右偏移 负值向左
+                    第二个值：垂直偏移量 正值向下偏移 负值向上
+                    第三个值：阴影的模糊半径
+                    第四个值：阴影的颜色 
+
+                或者有5个值的话第四个值即为阴影扩展长度值
+             */
+             
+             box-shadow: 20px 20px 50px rgba(0,0,0, 0.3);
+
+             /* 
+                border-radius: 用来设置圆角 圆角设置的圆的半径大小
+
+                border-top-left-radius  border-top-right-radius
+                border-bottom-left-radius  border-bottom-right-radius
+
+                border-radius 可以分别指定四个角的圆角
+                    四个值 左上 右上 右下 左下
+                border-radius xx px / xx px
+              */
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
